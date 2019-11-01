@@ -3,7 +3,7 @@ import React from 'react'
 const VeiwSection = () => {
     return (
         <div>
-            Viwe
+            View
         </div>
     )
 }

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container.search {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: lightsalmon;
+}
+
+.container.view {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+.container.load {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: lightsalmon;
+}
