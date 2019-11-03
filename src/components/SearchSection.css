@@ -1,0 +1,53 @@
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.searchbar form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.searchbar form input {
+    width: 100%;
+    height: 30px;
+    border: 2px solid salmon;
+    text-align: center;
+}
+
+.searchbar form button {
+    align-self: flex-end;
+    margin-top: 7px;
+    width: 100px;
+}
+
+.searchbar form button:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------------------- */
+
+.addedList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.addedList p {
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 40px;
+    margin: 4px 0px 4px 0px;
+}
+
+.inActive {
+    background-color: gray;
+}

@@ -4,21 +4,24 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 98vh;
 }
 
 .container.search {
     display: flex;
     flex: 1;
     flex-direction: column;
+    justify-content: flex-start;
     background-color: lightsalmon;
+    min-width: 200px;
 }
 
 .container.view {
     display: flex;
-    flex: 2;
-    flex-direction: column;
+    flex: 3;
+    flex-flow: row wrap;
     background-color: lightgray;
+    overflow: hidden scroll;
 }
 
 .container.load {
