@@ -48,6 +48,11 @@
     margin: 4px 0px 4px 0px;
 }
 
+.addedList p:hover {
+    cursor: pointer;
+}
+
 .inActive {
     background-color: gray;
+    color: white;
 }

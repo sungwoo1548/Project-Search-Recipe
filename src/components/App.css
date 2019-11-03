@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 98vh;
+    min-width: 850px;
 }
 
 .container.search {
@@ -22,6 +23,7 @@
     flex-flow: row wrap;
     background-color: lightgray;
     overflow: hidden scroll;
+    min-width: 600px;
 }
 
 .container.load {

@@ -22,21 +22,8 @@ const SearchSection = (props) => {
 
     }
 
-
     const _selectControll = (text) => {
         handleItem(text, "clicked");
-        // items.map(el => {
-        //     if (el[0] === text) {
-        //         el[1] = !el[1];
-        //         handleItem
-        //     }
-        // });
-        // 클릭된 식자재에 대해 noUseItem에 이미 있으면 선택해제, 없으면 선택 활성화.
-        // if (noUseItems.indexOf(text) === -1) { // 추가후 클리하면 선택해제
-        //     handleItem(text, "unChecked");
-        // } else {
-        //     handleItem(text, "reChecked");
-        // }
     }
 
     return (
@@ -53,6 +40,7 @@ const SearchSection = (props) => {
             </div>
 
             <h2>추가된 식재료</h2>
+            <button onClick={() => { props.clearLocalStorage ()}}>초기화</button>
             <div className="addedList">
                 {
                     items.map((el) => {
