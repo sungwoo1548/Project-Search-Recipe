@@ -48,9 +48,14 @@ export default class App extends Component {
 
     handleItem = (text, method) => {
         if (method === "add") {
-            console.log(text, "가 추가되었습니다.");
-            this.state.items.push([text, true]);
-            this.setState({ items: this.state.items });
+            if (this.state.items.indexOf(text) !== -1) {
+
+                console.log(text, "가 추가되었습니다.");
+                this.state.items.push([text, true]);
+                this.setState({ items: this.state.items });
+            } else {
+                alert("이미 ", text, "가 추가되어있습니다.")
+            }
         }
         if (method === "clicked") { // 추가된 식재료 클릭시 선택 해제됨 (noUseItems 에 추가되고 items에서 제외)
             console.log(text, "가 클릭됨");
